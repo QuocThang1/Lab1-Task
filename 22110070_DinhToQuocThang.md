@@ -96,7 +96,6 @@ r $(python -c "print('A' * 32)")
 info registers esp
 ```
 ![alt text](./image/Screenshot2024-10-21093246.png)
-
 output screenshot (optional)
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
