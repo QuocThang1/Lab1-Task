@@ -95,7 +95,7 @@ r $(python -c "print('A' * 32)")
 ```
 info registers esp
 ```
-<img src="image.png">
+![alt text](image.png)
 
 output screenshot (optional)
 
